@@ -8,6 +8,7 @@
 		"babel-minify": "^0.5.1",
 		"clean-css-cli": "^4.3.0"
 	},
+	"plugins": [ "@babel/plugin-proposal-class-properties" ],
 	"author": {
 		"name": "Nizar Mahmoud",
 		"email": "nizarmah@hotmail.com",
