@@ -2,21 +2,11 @@
 	"name": "auto-minify-master",
 	"repository": "jvanoostrum/auto-minify-master",
 	"homepage": "https://github.com/jvanoostrum/auto-minify-master/",
-	
-	"devDependencies": {
-        "@babel/plugin-proposal-class-properties": "^7.2.3",
-        "@babel/preset-env": "^7.2.3",
-		"@babel/preset-react": "^7.0.0",
-		"babel-preset-react": "^6.23.0"
-	},
 	"dependencies": {
-        "@babel/plugin-proposal-class-properties": "^7.2.3",
-        "@babel/preset-env": "^7.2.3",
-		"@babel/preset-react": "^7.0.0",
-		"babel-preset-react": "^6.23.0",
-		"uglify-js": "^3.10.0",
+ 		"uglify-js": "^3.10.0",
 		"babel-minify": "^0.5.1",
-		"clean-css-cli": "^4.3.0"
+		"clean-css-cli": "^4.3.0",
+		"terser": "^5.3.4"
 	},
 	"plugins": [ "@babel/plugin-proposal-class-properties" ],
 	"author": {

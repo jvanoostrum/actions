@@ -78,11 +78,13 @@ exec_minify_js () {
 	'
 	file=$1
 	out=$2
-
+ 
 	js_engine=$INPUT_JS_ENGINE
 
 	if [[ $js_engine == "babel" ]]; then
 		npx minify $file --out-file $out
+	elif [[ $js_engine == "terser" ]]; then
+		npx terser $file --compress --mangle --output $out
 	elif [[ $js_engine == "uglify-js" ]]; then
 		npx uglifyjs $file --compress --mangle --output $out
 	fi
