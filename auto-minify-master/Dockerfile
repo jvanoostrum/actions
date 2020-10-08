@@ -8,6 +8,7 @@ COPY .babelrc /app/.babelrc
 RUN apk add --no-cache bash coreutils \
  && apk add --no-cache --upgrade grep \
  && npm install
+ && npm install --save @babel/plugin-proposal-class-properties
 
 ADD entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
