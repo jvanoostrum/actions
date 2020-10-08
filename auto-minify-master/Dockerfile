@@ -3,7 +3,7 @@ FROM node:current-alpine3.12
 WORKDIR /app/
 
 COPY package.json /app/package.json
-COPY package.json /app/.babelrc
+COPY .babelrc /app/.babelrc
 
 RUN apk add --no-cache bash coreutils \
  && apk add --no-cache --upgrade grep \
