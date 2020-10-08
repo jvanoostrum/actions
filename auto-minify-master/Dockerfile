@@ -8,7 +8,7 @@ COPY .babelrc /app/.babelrc
 RUN apk add --no-cache bash coreutils \
  && apk add --no-cache --upgrade grep \
  && npm install
-RUN RUN npm i @babel/core babel-loader @babel/preset-env @babel/preset-react babel-plugin-transform-class-properties --save
+RUN npm i @babel/core babel-loader @babel/preset-env @babel/preset-react babel-plugin-transform-class-properties --save
 
 ADD entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
